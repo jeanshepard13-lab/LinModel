@@ -1,6 +1,6 @@
 ---
 title: "Linear Model with Prediction"
-author: "Dr. J"
+author: "Jean Shepard"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -35,8 +35,11 @@ head(mtcars)
  wt (wt) is the predictor (X)
 
 ## data summary
-### graphical summary
+### graphical summary  
 
+```{r}
+plot(mpg~wt,data=mtcars)
+```
 ### numerical summary
 
 ### model summary
