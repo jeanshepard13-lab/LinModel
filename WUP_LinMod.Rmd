@@ -41,6 +41,7 @@ head(mtcars)
 plot(mpg~wt,data=mtcars, pch=19)
 grid()
 ```
+As the cars weight increases, its fuels efficiency decreases revealing a strong negative correlation
 
 ### numerical summary
 
@@ -68,6 +69,7 @@ print(predict(model1, newData, interval = 'predict'))
 plot(mpg~disp,data=mtcars, pch=19)
 grid()
 ```
+As engine disparagement increases, fuel efficiency decreases
 
 ### numerical summary
 
@@ -93,6 +95,8 @@ print(predict(model2, newData, interval = 'predict'))
 plot(mpg ~ wt+disp, data = mtcars, pch=18)
 grid()
 ```
+
+The first graph shows the car weight increases, its fuel efficiency decreases revealing a strong negative correlation. In the second graph it shows that as engine displacement increases, fuel efficiency decreases
 
 ### numerical summary
 
@@ -137,6 +141,5 @@ summary(model3)
 anova_result <- anova(model1, model3)
 print(anova_result)
 ```
-
 # Discussion and Conculsions
-
+Neither vehicle weight nor engine displacemnt has any linear relationship with mpg. It doesn't make a difference.
