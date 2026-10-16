@@ -38,7 +38,8 @@ head(mtcars)
 ### graphical summary  
 
 ```{r}
-plot(mpg~wt,data=mtcars)
+plot(mpg~wt,data=mtcars, pch=19)
+grid()
 ```
 ### numerical summary
 
@@ -62,11 +63,15 @@ print(predict(model1, newData, interval = 'predict'))
 
 ## data summary
 ### graphical summary
+```{r}
+plot(mpg~disp,data=mtcars, pch=19)
+grid()
+```
 
 ### numerical summary
 
 ### model summary
-
+  
 
 ```{r}
 model2 <- lm(mpg ~ disp, data = mtcars)
